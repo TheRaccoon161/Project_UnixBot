@@ -1,0 +1,6 @@
+[console_scripts]
+initialize_UnixBot_db = UnixBot.scripts.initialize_db:main
+
+[paste.app_factory]
+main = UnixBot:main
+
