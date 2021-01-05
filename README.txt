@@ -15,30 +15,30 @@ Getting Started
 
 - Upgrade packaging tools, if necessary.
 
-    env/bin/pip install --upgrade pip setuptools
+    env/Scripts/pip install --upgrade pip setuptools
 
 - Install the project in editable mode with its testing requirements.
 
-    env/bin/pip install -e ".[testing]"
+    env/Scripts/pip install -e ".[testing]"
 
 - Initialize and upgrade the database using Alembic.
 
     - Generate your first revision.
 
-        env/bin/alembic -c development.ini revision --autogenerate -m "init"
+        env/Scripts/alembic -c development.ini revision --autogenerate -m "init"
 
     - Upgrade to that revision.
 
-        env/bin/alembic -c development.ini upgrade head
+        env/Scripts/alembic -c development.ini upgrade head
 
 - Load default data into the database using a script.
 
-    env/bin/initialize_UnixBot_db development.ini
+    env/Scripts/initialize_UnixBot_db development.ini
 
 - Run your project's tests.
 
-    env/bin/pytest
+    env/Scripts/pytest
 
 - Run your project.
 
-    env/bin/pserve development.ini
+    env/Scripts/pserve development.ini
