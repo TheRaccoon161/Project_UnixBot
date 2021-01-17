@@ -1,0 +1,4 @@
+"name","type","length","leftDigits","rightDigits"
+"id","INTEGER","2","2","0"
+"question","STRING","62","0","0"
+"answer","STRING","308","0","0"
